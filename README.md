@@ -1,2 +1,2 @@
 # HTML_CSS
- Proejtos de estudo HTML e CSS
+ Projetos de estudo HTML e CSS
