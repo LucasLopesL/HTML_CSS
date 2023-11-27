@@ -1,0 +1,26 @@
+@charset "Utf-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+col.nome {
+    background-color: rgba(137, 43, 226, 0.39);
+}
+
+col.cgrupo {
+    background-color: rgba(127, 255, 212, 0.356);
+}
+
+col.cprof {
+    background-color: rgba(17, 240, 91, 0.473)
+}
