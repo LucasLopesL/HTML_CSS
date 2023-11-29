@@ -6,36 +6,217 @@
     <title>Document</title>
 </head>
 <body>
+
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="post" autocomplete="on">
-        <p>
-            <label for="iusu">Usuário: </label>
-            <input type="text" name="usu" id="iusu" minlength="5" maxlength="15" size="10" placeholder="nome do Usuário" autocomplete="username" required>
-        </p>
-        <p>
-            <label for="isen">Senha: </label>
-            <input type="password" name="sen" id="isen" minlength="8" maxlength="20" size="8" placeholder="Mínimo de 8 caracteres" autocomplete="new-password" required>
-        </p>
 
-        <p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" min="0" max="10" step="0.1" required>
-        </p>
+    <form action="cadastro.php" method="get" autocomplete="on">
 
-        <p>
-            <label for="iperiodo">Período Letivo</label>
-            <input type="month" name="periodo" id="iperiodo">
-        </p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iusu">Usuário: </label>
+                <input type="text" name="usu" id="iusu" minlength="5" maxlength="15" size="10" placeholder="nome do Usuário" autocomplete="username" required>
+            </p>
+            <p>
+                <label for="isen">Senha: </label>
+                <input type="password" name="sen" id="isen" minlength="8" maxlength="20" size="8" placeholder="Mínimo de 8 caracteres" autocomplete="new-password" required>
+            </p>
+            <p>
+                <label for="imedia">Média: </label>
+                <input type="number" name="media" id="imedia" min="0" max="10" step="0.1" required>
+            </p>
+            <p>
+                <label for="iperiodo">Período Letivo: </label>
+                <input type="month" name="periodo" id="iperiodo">
+            </p>
+            <p>
+                <label for="idia">Data da Prova: </label>
+                <input type="date" name="dia" id="idia">
+            </p>
+            <p>
+                <label for="ihora">Horário da Prova: </label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+            <P>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </P>
+            <p>
+                <label for="itelefone">Telefone: </label>
+                <input type="tel" name="Telefone" id="itelefone" autocomplete="tel" pattern="^\(\d{2}\)[0-9]{4,5}-[0-9]{4}$"required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
 
-        <p>
-            <label for="idia">Data da Prova</label>
-            <input type="date" name="dia" id="idia">
-        </p>
+        <fieldset>
 
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+            <legend>Esportes Favoritos</legend>
+            <p>
+                <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label>
+                <br>
+                <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label>
+                <br>
+                <input type="checkbox" name="nat" id="inat"> <label for="inat">Natação</label>
+                <br>
+                <input type="checkbox" name="ten" id="iten"> <label for="iten">Tênis</label>
+
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Cor Favorita</legend>
+            <p>
+                <input type="color" name="cor" id="icor"> <label for="icor">Cor Favorita</label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Nível de Satisfação</legend>
+            <p>
+                <label for="isat">Nivel de Satisfação</label>
+                <input type="range" name="sat" id="isat" min="0" max="10" value="5" oninput="ival.innerHTML = Number(isat.value)">
+                <output id="ival">5</output>
+            </p>
+            <p>
+                <label for="ifoto">Insira uma Foto</label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Foto de Perfil</legend>
+            <p>
+                <label for="ifoto">Insira uma Foto</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="imas"> <label for="imas">Masculino</label>
+                <input type="radio" name="sexo" id="ifem"> <label for="ifem">Feminino</label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Estado</legend>
+            <p>
+                <label for="iest">Estado de Nasciemto: </label>
+                <select name="Estado" id="iest">
+
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernanbuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Profissão</legend>
+            <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstrpof">
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="ADM">Markting</option>
+                    <option value="PP">Publicidade e Propaganda</option>
+                    <option value="PROF">Professor</option>
+                </datalist>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Mensagem</legend>
+            <p>
+                <label for="imsg">Digite sua Mensagem</label><br>
+                <textarea name="smg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Soma</legend>
+            <p>
+                <label for="in1">Digite um número: </label>
+                <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+
+            <p>
+                <label for="in2">Digite outro número: </label>
+                <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+
+            <p>
+                <label for="isoma">Digite outro número: </label>
+                <output name="soma" id="isoma">0</output>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </fieldset>
 
     </form>
 </body>
