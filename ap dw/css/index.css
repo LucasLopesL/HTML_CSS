@@ -1,0 +1,149 @@
+/* Estilos para telas pequenas */
+@media only screen and (max-width: 500px) {
+  main {
+    height: calc(100vh - 150px); /* Ajuste a altura para telas pequenas */
+  }
+
+  /* Outros ajustes de estilo conforme necessário */
+}
+
+/* Estilos para telas médias */
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+  main {
+    height: calc(100vh - 200px); /* Ajuste a altura para telas médias */
+  }
+
+  /* Outros ajustes de estilo conforme necessário */
+}
+
+/* Estilos para telas grandes */
+@media only screen and (min-width: 1025px) {
+  main {
+    height: calc(100vh - 250px); /* Ajuste a altura para telas grandes */
+  }
+
+  /* Outros ajustes de estilo conforme necessário */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 0, 0),
+    rgb(255, 166, 0),
+    rgb(255, 255, 0)
+  );
+  height: 100%;
+  /* Alterado para overflow-y: scroll */
+  overflow-y: scroll;
+}
+
+main {
+  /* Ajustando a altura do main para que ocupe toda a janela menos a altura do cabeçalho e rodapé */
+  height: calc(
+    100vh - 200px
+  ); /* 100px para o cabeçalho e 100px para o rodapé */
+  overflow-y: auto; /* Adicionado para permitir a rolagem no main, se necessário */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-left: 10px;
+  padding: 10px;
+}
+
+li:hover {
+  background-color: #303030;
+  border-radius: 5%;
+}
+
+li > a:hover {
+  color: rgba(255, 68, 0, 0.596);
+}
+
+main > div {
+  align-items: center;
+  padding: 20px;
+  max-width: 1000px;
+  max-height: 1000px;
+  text-align: justify;
+  text-justify: center;
+  display: inline-block;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: content-box;
+  box-shadow: #333;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5px;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px;
+}
+
+footer {
+  height: 100px;
+  width: 99.1vw;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+footer > h2 {
+  padding: 30px;
+  text-align: center;
+}
+
+section {
+  background-color: #fff;
+  margin-top: 200px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  border-radius: 7px;
+}
