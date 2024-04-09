@@ -1,28 +1,19 @@
-/* Estilos para telas pequenas */
 @media only screen and (max-width: 500px) {
   main {
-    height: calc(100vh - 150px); /* Ajuste a altura para telas pequenas */
+    height: calc(100vh - 150px);
   }
-
-  /* Outros ajustes de estilo conforme necessário */
 }
 
-/* Estilos para telas médias */
 @media only screen and (min-width: 501px) and (max-width: 1024px) {
   main {
-    height: calc(100vh - 200px); /* Ajuste a altura para telas médias */
+    height: calc(100vh - 200px);
   }
-
-  /* Outros ajustes de estilo conforme necessário */
 }
 
-/* Estilos para telas grandes */
 @media only screen and (min-width: 1025px) {
   main {
-    height: calc(100vh - 250px); /* Ajuste a altura para telas grandes */
+    height: calc(100vh - 250px);
   }
-
-  /* Outros ajustes de estilo conforme necessário */
 }
 
 body {
@@ -35,16 +26,12 @@ body {
     rgb(255, 255, 0)
   );
   height: 100%;
-  /* Alterado para overflow-y: scroll */
   overflow-y: scroll;
 }
 
 main {
-  /* Ajustando a altura do main para que ocupe toda a janela menos a altura do cabeçalho e rodapé */
-  height: calc(
-    100vh - 200px
-  ); /* 100px para o cabeçalho e 100px para o rodapé */
-  overflow-y: auto; /* Adicionado para permitir a rolagem no main, se necessário */
+  height: calc(100vh - 200px);
+  overflow-y: auto;
 }
 
 .container {

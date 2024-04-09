@@ -1,0 +1,227 @@
+:root {
+  font-family: "Monteserat", sans-serif;
+  color: #404040;
+}
+
+/* Cabeçalho */
+
+.item-cabecalho a {
+  font-size: 14px;
+  font-family: "Monteserat", sans-serif;
+  color: #112e61;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Seção Hero */
+h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 19px;
+}
+
+.hero a {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #404040;
+}
+
+/* Seção Cursos Gratuitos */
+
+.cursos-gratuitos h2 {
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.cursos-gratuitos span {
+  font-weight: 600;
+  font-size: 35px;
+  color: #7a40be;
+}
+
+.cursos-gratuitos h3 {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.cursos-gratuitos a {
+  font-size: 19px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #404040;
+}
+
+/* Seção Diferenciais */
+
+.diferenciais h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.diferenciais h2 strong {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.diferenciais p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.diferenciais p > strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.o-que-falam h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.o-que-falam b {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.o-que-falam a {
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #404040;
+}
+
+.na-midia {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.blog h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.blog figcaption {
+  font-size: 15px;
+}
+
+.blog a > strong {
+  font-size: 15px;
+  font-weight: 600;
+  color: #f7a70c;
+}
+
+.blog h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.blog p {
+  font-size: 17px;
+}
+
+.blog a {
+  text-decoration: none;
+}
+
+.blog h3 > a {
+  text-decoration: none;
+  color: #404040;
+}
+
+.ajudar h2 {
+  font-size: 35px;
+}
+
+.ajudar strong {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.ajudar p {
+  font-size: 19px;
+}
+
+.ajudar a > strong {
+  font-size: 19px;
+  color: #008ff7;
+  text-decoration: underline;
+}
+
+.ajudar p {
+  font-size: 19px;
+}
+
+.ajudar b {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.ajudar strong {
+  font-size: 19px;
+}
+
+.ajudar a > b {
+  font-weight: 600;
+  text-decoration: underline;
+  color: #008ff7;
+}
+
+.minicurso h2 {
+  font-size: 35px;
+}
+
+.minicurso strong {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.minicurso p {
+  font-size: 19px;
+}
+
+p.minicurso-botao {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.rodape-1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.rodape-2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.rodape-3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.link-rodape {
+  font-size: 16px;
+  color: #1a77a4;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.rodape-final {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.rodape-formulario {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.botao-rodape {
+  font-size: 22px;
+  font-weight: 700;
+}
