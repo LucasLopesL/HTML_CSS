@@ -1,4 +1,4 @@
-const url = "https://api-go-wash-efc9c9582687.herokuapp.com/api/login";
+const url = "https://go-wash-api.onrender.com/api/login";
 
 async function fazerLogin() {
   var email = document.getElementById("email");
@@ -20,7 +20,8 @@ async function fazerLogin() {
     method: "POST",
     body: JSON.stringify({
       email: email.value,
-      senha: senha.value,
+      password: senha.value,
+      user_type_id: 1,
     }),
     headers: {
       "Content-Type": "application/json",
@@ -30,11 +31,14 @@ async function fazerLogin() {
   let data = await resposta.json();
 
   // Apresentação das mensagens de erro retornadas pela API
-  if (data.data.statusCode != 200) {
+  if (data.data != undefined) {
     alert("Erro ao fazer login. Por favor, verifique seu e-mail e senha.");
     return;
   }
+
   alert("Login realizado com sucesso");
+
   // Redirecionar para a página de perfil do usuário
+  localStorage.setItem("token", data.access_token);
   window.location.href = "home.html";
 }

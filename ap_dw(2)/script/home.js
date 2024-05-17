@@ -1,42 +1,22 @@
-const url = 'https://api-go-wash-efc9c9582687.herokuapp.com/api/login';
+const url = "https://go-wash-api.onrender.com/api/auth/address";
 
-async function fazerLogin(){   
-    var email = document.getElementById('email');     
-    var senha = document.getElementById('senha');     
-    
-    // Validação dos dados via JavaScript
-    if (!email.value || !senha.value) {
-        alert("Por favor, preencha todos os campos.");
-        return;
-    }
-    
-    // Etapa de validação dos dados se estão sendo enviados na API
-    console.log("Enviando dados para a API:", {
-        "email": email.value,
-        "senha": senha.value
-    });
+async function mostrarEnderecos() {
+  const token = localStorage.getItem("token");
 
-    let resposta = await fetch(url,{
-        method:"POST",
-        body:JSON.stringify(
-            {
-                "email": email.value,
-                "senha": senha.value
-            }
-        ),
-        headers:{
-            'Content-Type': 'application/json'
-        }        
-    });
+  let resposta = await fetch(url, {
+    method: "GET",
+    headers: {
+      Authorization: "Bearer " + token,
+    },
+  });
+  let data = await resposta.json();
 
-    let data = await resposta.json();
-    
-    // Apresentação das mensagens de erro retornadas pela API
-    if(data.data.statusCode != 200){
-        alert("Erro ao fazer login. Por favor, verifique seu e-mail e senha.");
-        return;
-    }
-    alert("Login realizado com sucesso");
-    // Redirecionar para a página de perfil do usuário
-    window.location.href = "perfil.html";
+  const container = document.querySelector(".conteiner");
+  data.data.forEach((endereco) => {
+    const enderecoElement = document.createElement("p");
+    enderecoElement.textContent = endereco.formatted_address;
+    container.appendChild(enderecoElement);
+  });
 }
+
+document.addEventListener("DOMContentLoaded", mostrarEnderecos);
