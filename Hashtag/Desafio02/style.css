@@ -1,12 +1,41 @@
 :root {
   font-family: "Monteserat", sans-serif;
+  font-size: 62.5%;
   color: #404040;
+}
+
+/* Seletor Universal */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Sessão Body */
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.4;
 }
 
 /* Cabeçalho */
 
+.cabecalho {
+  padding: 1.6rem 3.2rem;
+  box-shadow: 0 0.21rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+nav ul {
+  list-style: none;
+}
+
 .item-cabecalho a {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-family: "Monteserat", sans-serif;
   color: #112e61;
   text-decoration: none;
@@ -14,84 +43,161 @@
   font-weight: 600;
 }
 
+.item-cabecalho a:hover,
+.item-cabecalho a:active {
+  color: #f60;
+}
+
 /* Seção Hero */
-h1 {
-  font-size: 35px;
+
+.hero {
+  padding: 7.63rem 2rem;
+  background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-01.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero h1 {
+  font-size: 3.32rem;
   font-weight: 600;
+  line-height: 1;
 }
 
 .hero p {
-  font-size: 19px;
+  font-size: 1.92rem;
+  line-height: 1.2;
 }
 
 .hero a {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   text-decoration: none;
   color: #404040;
+}
+
+.conteiner-hero {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.botao-hero {
+  border-radius: 3rem;
+  background-image: linear-gradient(180deg, #ff645e, #ff9253);
+  padding: 0.65rem 2.5rem;
+  display: inline-block;
+  color: white;
+  border-bottom: solid 0.4rem #993c38;
+  border-right: solid 0.4rem #993c38;
+}
+
+.botao-hero:hover {
+  background-color: #ff9253;
+  background-image: none;
+  border-bottom: solid 0.4rem #ff9253;
+  border-right: solid 0.4rem #ff9253;
+  box-shadow: 0 0.21rem 0.8rem rgba(0, 0, 0, 0.15);
+  color: #993c38;
+}
+
+.iframe-hero {
+  aspect-ratio: 16/9;
+  width: 42rem;
+  height: auto;
+  border-radius: 2.5rem;
 }
 
 /* Seção Cursos Gratuitos */
 
+.conteiner-cursos-gratuitos {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.conteiner-treinamentos {
+  box-shadow: inset 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.15);
+  border-radius: 2.5rem;
+}
+
+.cursos-gratuitos {
+  background-image: url("https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-02.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .cursos-gratuitos h2 {
   font-weight: 400;
-  font-size: 35px;
+  font-size: 2.76rem;
+  line-height: 1.1;
 }
 
 .cursos-gratuitos span {
   font-weight: 600;
-  font-size: 35px;
+  font-size: 3.5rem;
   color: #7a40be;
 }
 
 .cursos-gratuitos h3 {
-  font-size: 23px;
+  font-size: 2.3rem;
   font-weight: 700;
+  padding: 0.42rem 1.6rem;
+  background-image: linear-gradient(90deg, #aa56e6, #6d42b9);
+  color: white;
+  border-radius: 1rem;
+  display: inline-block;
+  transform: rotate(-3deg);
+  box-shadow: 0 0.21 0.4 rgba(0, 0, 0, 0.15);
 }
 
 .cursos-gratuitos a {
-  font-size: 19px;
+  font-size: 1.9rem;
   font-weight: 400;
   text-decoration: none;
   color: #404040;
+}
+
+.imagem-cursos-gratuitos {
+  aspect-ratio: 16/9;
+  width: 44rem;
 }
 
 /* Seção Diferenciais */
 
 .diferenciais h2 {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
 .diferenciais h2 strong {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 600;
 }
 
 .diferenciais p {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
 .diferenciais p > strong {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
 /* Seção O que Falam */
 
 .o-que-falam h2 {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
 .o-que-falam b {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 600;
 }
 
 .o-que-falam a {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
   text-decoration: none;
   color: #404040;
@@ -100,34 +206,34 @@ h1 {
 /* Seção Na Mídia */
 
 .na-midia {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
 /* Seção Blog */
 
 .blog h2 {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
 .blog figcaption {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .blog a > strong {
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #f7a70c;
 }
 
 .blog h3 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
 }
 
 .blog p {
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 .blog a {
@@ -142,36 +248,36 @@ h1 {
 /* Seção Ajudar */
 
 .ajudar h2 {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
 .ajudar h2 > strong {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 600;
 }
 
 .ajudar p {
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 .ajudar a > strong {
-  font-size: 19px;
+  font-size: 1.9rem;
   color: #008ff7;
   text-decoration: underline;
 }
 
 .ajudar p {
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 .ajudar b {
-  font-size: 19px;
+  font-size: 1.9rem;
   font-weight: 600;
 }
 
 .ajudar strong {
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 .ajudar a > b {
@@ -183,64 +289,64 @@ h1 {
 /* Seção Minicurso */
 
 .minicurso h2 {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
 .minicurso h2 > strong {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 600;
 }
 
 .minicurso p {
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 p.minicurso-botao {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 600;
 }
 
 /* Seção Rodapé */
 
 .rodape-1 {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 
 .rodape-2 {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
 }
 
 .rodape-2-2 {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
 .rodape-3 {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
 .link-rodape {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #1a77a4;
   text-decoration: underline;
   font-weight: 400;
 }
 
 .rodape-final {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
 .rodape-formulario {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
 .botao-rodape {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 700;
 }
