@@ -22,6 +22,7 @@ body {
 /* Cabeçalho */
 
 .cabecalho {
+  z-index: 9999;
   padding: 1.6rem 3.2rem;
   box-shadow: 0 0.21rem 0.4rem 0 rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -32,6 +33,7 @@ body {
 
 nav ul {
   list-style: none;
+  display: none; /* Temporário */
 }
 
 .item-cabecalho a {
@@ -114,9 +116,14 @@ nav ul {
   max-width: 1000px;
 }
 
+.conteiner-cursos-gratuitos ul {
+  list-style: none;
+}
+
 .conteiner-treinamentos {
   box-shadow: inset 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.15);
   border-radius: 2.5rem;
+  position: relative;
 }
 
 .cursos-gratuitos {
@@ -146,8 +153,26 @@ nav ul {
   color: white;
   border-radius: 1rem;
   display: inline-block;
-  transform: rotate(-3deg);
+  transform: rotate(-3deg) translate(-50%);
   box-shadow: 0 0.21 0.4 rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.logo-circulo {
+  width: 4.5rem;
+  display: inline-block;
+  height: 4.5rem;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  padding: 0.82rem;
+  box-shadow: inset 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.15);
+}
+
+.logo-circulo img {
+  width: 100%;
+  height: 3rem;
 }
 
 .cursos-gratuitos a {
@@ -162,10 +187,44 @@ nav ul {
   width: 44rem;
 }
 
+.conteiner-programacao {
+  box-shadow: inset 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.15);
+  border-radius: 2.5rem;
+  position: relative;
+}
+
+.social-media:link,
+.social-media:visited {
+  display: inline-block;
+  font-size: 1.92rem;
+  background-color: #eee;
+  padding: 0.42rem 3.12rem;
+  border-radius: 2rem;
+  box-shadow: inset 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.15);
+}
+
+.social-media:hover {
+  text-decoration: underline;
+}
+
+.social-media img {
+  width: 1.8rem;
+}
+
 /* Seção Diferenciais */
 
+.diferenciais {
+  background-color: #f4f5f7;
+}
+
+.conteiner-diferenciais {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-image: url();
+}
+
 .diferenciais h2 {
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
