@@ -314,14 +314,36 @@ nav ul {
 .imagens-clientes > img {
   height: 5rem;
   filter: grayscale(100%);
-  display: inline-block;
+}
+
+.logo-loreal,
+.logo-disney,
+.logo-animale {
+  opacity: 60%;
+}
+
+.logo-subsea {
+  opacity: 75%;
 }
 
 /* Seção O que Falam */
 
+.o-que-falam {
+  background-image: url("https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-04.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.conteiner-o-que-falam {
+  margin: 0 auto;
+  max-width: 100rem;
+}
+
 .o-que-falam h2 {
   font-size: 3.5rem;
   font-weight: 400;
+  color: white;
 }
 
 .o-que-falam b {
@@ -329,11 +351,85 @@ nav ul {
   font-weight: 600;
 }
 
+.o-que-falam-carrosel {
+  position: relative;
+}
+
+.imagem-carrossel {
+  background-color: #7489af;
+  background-blend-mode: multiply;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33%;
+  border-radius: 2.5rem;
+  aspect-ratio: 16/09;
+  display: inline-block;
+  position: relative;
+}
+
+.imagem-carrossel-1 {
+  background-image: url("http://i3.ytimg.com/vi/N_EZD04zmrw/hqdefault.jpg");
+}
+
+.imagem-carrossel-2 {
+  background-image: url("http://i3.ytimg.com/vi/auqWeBJLJHY/hqdefault.jpg");
+}
+
+.imagem-carrossel-3 {
+  background-image: url("http://i3.ytimg.com/vi/FD79IpCaM1Y/hqdefault.jpg");
+}
+
+.seta-o-que-falam {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
+
+.seta-o-que-falam-esquerda {
+  left: 0;
+  top: 50%;
+  transform: translate(-150%, -45%);
+}
+
+.seta-o-que-falam-direita {
+  right: 0;
+  top: 50%;
+  transform: translate(160%, -45%);
+}
+
+.seta-player {
+  cursor: pointer;
+  position: relative;
+  width: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item-navegacao {
+  cursor: pointer;
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #86a8bc;
+}
+
+.ativa {
+  background-color: #14577f;
+}
+
 .o-que-falam a {
   font-size: 2.4rem;
   font-weight: 600;
   text-decoration: none;
   color: #404040;
+}
+
+.botao-o-que-falam {
+  background-image: linear-gradient(180deg, #196c9f, #1a80a7);
+  border-radius: 1rem;
 }
 
 /* Seção Na Mídia */
