@@ -200,7 +200,7 @@ nav ul {
   background-color: #eee;
   padding: 0.42rem 3.12rem;
   border-radius: 2rem;
-  box-shadow: inset 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
 }
 
 .social-media:hover {
@@ -214,33 +214,107 @@ nav ul {
 /* Seção Diferenciais */
 
 .diferenciais {
-  background-color: #f4f5f7;
+  background-color: white;
 }
 
 .conteiner-diferenciais {
   max-width: 1000px;
   margin: 0 auto;
-  background-image: url();
+  border-radius: 5rem;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
 }
 
-.diferenciais h2 {
-  font-size: 1.5rem;
+.conteiner-diferenciais-part-1 {
+  background-color: #005e88;
+  background-image: linear-gradient(
+    225deg,
+    rgba(89, 136, 217, 0.28),
+    rgba(92, 225, 250, 0.28)
+  );
+  padding: 4.88rem;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  color: white;
+}
+
+.diferenciais-border-h2 {
+  border-left: solid 0.5rem #ffb20f;
+  padding: 0.52rem 0 0.52rem 2rem;
+}
+
+.diferenciais-h2 {
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
-.diferenciais h2 strong {
+.diferenciais-strong {
   font-size: 3.5rem;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.conteiner-diferenciais-part-2 {
+  padding: 4.88rem;
+}
+
+.caixas-itens-diferenciais {
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
+  padding: 3.12rem 2.5rem;
+  margin: 1rem;
+  position: relative;
+}
+
+.diferenciais h3 {
+  line-height: 1.2;
+  font-size: 2.3rem;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+}
+
+.diferenciais a {
+  text-decoration: none;
+}
+
+.diferenciais span {
+  color: #005e88;
+  font-weight: 700;
 }
 
 .diferenciais p {
   font-size: 1.6rem;
-  font-weight: 400;
+  line-height: 1.4;
+  font-weight: regular;
 }
 
 .diferenciais p > strong {
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+.imagem-diferenciais {
+  background-color: #ffaf00;
+  border-radius: 1rem;
+  padding: 0.4rem;
+  box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 10rem;
+  height: 10rem;
+}
+
+.imagens-clientes {
+  padding: 4.88rem;
+}
+
+.imagens-clientes > img {
+  height: 5rem;
+  filter: grayscale(100%);
+  display: inline-block;
 }
 
 /* Seção O que Falam */
