@@ -114,6 +114,7 @@ nav ul {
 .conteiner-cursos-gratuitos {
   margin: 0 auto;
   max-width: 1000px;
+  padding: 7.63rem 2rem;
 }
 
 .conteiner-cursos-gratuitos ul {
@@ -215,6 +216,7 @@ nav ul {
 
 .diferenciais {
   background-color: white;
+  padding: 7.63rem 2rem;
 }
 
 .conteiner-diferenciais {
@@ -333,6 +335,7 @@ nav ul {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 7.63rem 2rem;
 }
 
 .conteiner-o-que-falam {
@@ -429,14 +432,45 @@ nav ul {
 
 .botao-o-que-falam {
   background-image: linear-gradient(180deg, #196c9f, #1a80a7);
-  border-radius: 1rem;
+  border-radius: 3.2rem;
+  padding: 0.65rem 2.5rem;
+  display: inline-block;
+  border-bottom: solid 0.4rem #14577f;
+  border-right: solid 0.4rem #14577f;
+}
+
+.botao-o-que-falam:hover {
+  background-image: none;
+  background-color: #1a80a7;
+  border-bottom: solid 0.4rem #1a80a7;
+  border-right: solid 0.4rem #1a80a7;
 }
 
 /* Seção Na Mídia */
 
 .na-midia {
+  background-image: url("https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUND-Banner-05_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   font-size: 3.5rem;
   font-weight: 400;
+  padding: 3.9rem 2rem;
+}
+
+.conteiner-na-midia {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.imagem-na-midia {
+  display: inline-block;
+}
+
+.na-midia-h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  display: inline-block;
 }
 
 /* Seção Blog */
